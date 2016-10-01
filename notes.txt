@@ -1,0 +1,26 @@
+When can X influence Y?
+
+X -> Y
+X <- Y
+X -> W -> Y
+X <- W <- Y
+X <- W -> Y
+X <- W -> Y NOT (v-structure)
+
+When can X influence Y given evidence about Z
+
+X -> W -> Y
+W not in Z: yes
+W in Z: no
+
+X <- W <- Y
+W not in Z: yes
+W in Z: no
+
+X <- W -> Y
+W not in Z: yes
+W in Z: no
+
+X <- W -> Y NOT (v-structure)
+W (and all its descendents) not in Z: no
+W (or one of its descendents) in Z: yes
